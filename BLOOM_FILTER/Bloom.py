@@ -5,7 +5,7 @@ import random
 bloom =[0]*32
 def bloomfilter(a):
     # 3 hash functions
-    hash1=(a*random.randint(0,31))%32
+    hash1 = (a * 7) % 32
     hash2=(a*(a-3))%32
     hash3=(a*pow(a,2))%32
     count =0
